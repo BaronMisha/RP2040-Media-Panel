@@ -1,0 +1,95 @@
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# Local IDE configuration
+.vscode/.browse.c_cpp.db*
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/settings.json
+.vscode/ipch/
+*.code-workspace
+.idea/
+.vs/
+*.suo
+*.user
+
+# AI agents and local assistant state
+.agents/
+.agent/
+.codex/
+.codex-*
+AGENTS.md
+AGENTS.override.md
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+.cursor/
+.cursorignore
+.cursorrules
+.cline/
+.clinerules
+.continue/
+.roo/
+.roomodes
+.windsurf/
+.windsurfrules
+.aider*
+.gemini/
+GEMINI.md
+.junie/
+.kiro/
+.qodo/
+.serena/
+.mcp.json
+.vscode/mcp.json
+.github/agents/
+.github/chatmodes/
+.github/copilot-instructions.md
+.github/instructions/
+.github/prompts/
+.github/skills/
+/t.md
+/pos
+
+# Browser and test artifacts
+.playwright-mcp/
+TestResults/
+coverage/
+*.log
+/TEST_RESULTS.md
+/USB_SERIAL_PROTOCOL.md
+/tools/
+/test/
+
+# .NET build and publish output
+**/[Bb]in/
+**/[Oo]bj/
+/companion/dist/
+/companion/.runtime-test/
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Temporary and OS-generated files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini

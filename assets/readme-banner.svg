@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title description">
+  <title id="title">RP2040 Media Panel</title>
+  <desc id="description">Animated media panel connected over USB to a Raspberry Pi Pico board.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset=".5" stop-color="#10213a"/><stop offset="1" stop-color="#081322"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#32f5d2"/><stop offset=".5" stop-color="#20d9ff"/><stop offset="1" stop-color="#8d7dff"/></linearGradient>
+    <linearGradient id="record" x2="1" y2="1"><stop stop-color="#20d9ff"/><stop offset=".5" stop-color="#8d7dff"/><stop offset="1" stop-color="#ff4fa3"/></linearGradient>
+    <linearGradient id="board" x2="1" y2="1"><stop stop-color="#14789d"/><stop offset="1" stop-color="#06445f"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#20d9ff" stop-opacity=".23"/><stop offset="1" stop-color="#20d9ff" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#76ddff" stroke-opacity=".055"/></pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="lyrics"><rect x="733" y="231" width="0" height="16"><animate attributeName="width" values="0;148;148;0" keyTimes="0;.58;.86;1" dur="6s" repeatCount="indefinite"/></rect></clipPath>
+  </defs>
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="420" rx="28" fill="url(#grid)"/>
+  <ellipse cx="850" cy="205" rx="355" ry="255" fill="url(#halo)"><animate attributeName="opacity" values=".5;1;.5" dur="5s" repeatCount="indefinite"/></ellipse>
+  <path d="M0 355C210 310 360 420 585 354S930 306 1200 350V420H0Z" fill="#0a1728" opacity=".78"/>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <g transform="translate(66 55)">
+      <rect width="238" height="30" rx="15" fill="#112b40" stroke="#2de7e2" stroke-opacity=".42"/>
+      <circle cx="18" cy="15" r="5" fill="#32f5d2" filter="url(#glow)"><animate attributeName="opacity" values=".3;1;.3" dur="1.8s" repeatCount="indefinite"/></circle>
+      <text x="33" y="20" fill="#baf8ff" font-size="12" font-weight="700" letter-spacing="1.5">OPEN MEDIA HARDWARE</text>
+    </g>
+    <text x="66" y="154" fill="#f4fbff" font-size="62" font-weight="800" letter-spacing="-2">RP2040</text>
+    <text x="66" y="215" fill="url(#accent)" font-size="62" font-weight="800" letter-spacing="-2">MEDIA PANEL</text>
+    <text x="70" y="254" fill="#a8bbcf" font-size="18">Музыка Windows на отдельном дисплее</text>
+    <text x="70" y="281" fill="#718ba5" font-size="15">обложка • прогресс • громкость • синхронный текст</text>
+    <g transform="translate(68 315)" font-size="12" font-weight="700" text-anchor="middle" fill="#9cf7ff">
+      <rect width="106" height="34" rx="17" fill="#10283b" stroke="#22dbe4" stroke-opacity=".34"/><text x="53" y="22">USB CDC</text>
+      <rect x="116" width="128" height="34" rx="17" fill="#10283b" stroke="#22dbe4" stroke-opacity=".34"/><text x="180" y="22">ILI9341</text>
+      <rect x="254" width="136" height="34" rx="17" fill="#10283b" stroke="#22dbe4" stroke-opacity=".34"/><text x="322" y="22">WINDOWS</text>
+    </g>
+    <g transform="translate(490 322)" fill="#39e7ee">
+      <rect y="14" width="7" height="12" rx="3"><animate attributeName="y" values="14;5;14" dur="1s" repeatCount="indefinite"/><animate attributeName="height" values="12;30;12" dur="1s" repeatCount="indefinite"/></rect>
+      <rect x="13" y="8" width="7" height="18" rx="3"><animate attributeName="y" values="8;17;8" dur=".85s" repeatCount="indefinite"/><animate attributeName="height" values="18;9;18" dur=".85s" repeatCount="indefinite"/></rect>
+      <rect x="26" y="2" width="7" height="24" rx="3"><animate attributeName="y" values="2;11;2" dur="1.2s" repeatCount="indefinite"/><animate attributeName="height" values="24;15;24" dur="1.2s" repeatCount="indefinite"/></rect>
+      <rect x="39" y="10" width="7" height="16" rx="3"><animate attributeName="y" values="10;1;10" dur=".7s" repeatCount="indefinite"/><animate attributeName="height" values="16;25;16" dur=".7s" repeatCount="indefinite"/></rect>
+    </g>
+  </g>
+
+  <!-- Media panel -->
+  <g>
+    <rect x="687" y="27" width="248" height="361" rx="30" fill="#09111e" opacity=".55" filter="url(#glow)"/>
+    <rect x="688" y="24" width="242" height="360" rx="28" fill="url(#bg)" stroke="#52708c" stroke-opacity=".7" stroke-width="2"/>
+    <rect x="696" y="34" width="226" height="340" rx="22" fill="none" stroke="#a4c9e8" stroke-opacity=".12"/>
+    <circle cx="809" cy="367" r="4" fill="#61758b"/>
+    <rect x="716" y="65" width="190" height="290" rx="9" fill="#050c15" stroke="#4f718e" stroke-width="2"/>
+    <rect x="716" y="65" width="190" height="22" rx="8" fill="#0c2233"/>
+    <g font-family="Inter,Segoe UI,Arial,sans-serif">
+      <circle cx="728" cy="76" r="3" fill="#32f5d2"><animate attributeName="opacity" values=".3;1;.3" dur="1.6s" repeatCount="indefinite"/></circle>
+      <text x="737" y="80" fill="#bcebf3" font-size="8" font-weight="700">PC LINK</text>
+      <text x="892" y="80" text-anchor="end" fill="#7f99af" font-size="8">1 / 3</text>
+    </g>
+    <g transform="translate(811 146)">
+      <circle r="51" fill="#07101c" stroke="#45e8f0" stroke-opacity=".3"/>
+      <g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite"/>
+        <circle r="47" fill="url(#record)"/><path d="M-34-30A45 45 0 0 1 36-27M-42 10A45 45 0 0 0 28 36" fill="none" stroke="#fff" stroke-opacity=".22" stroke-width="3"/>
+        <circle r="28" fill="#10192a" opacity=".78"/><path d="M-10 16V-16L18 0Z" fill="#e8fdff"/><circle r="6" fill="#20d9ff"/>
+      </g><circle r="2.5" fill="#fff"/>
+    </g>
+    <g font-family="Inter,Segoe UI,Arial,sans-serif">
+      <text x="811" y="211" text-anchor="middle" fill="#f5fbff" font-size="13" font-weight="800">NEON SIGNAL</text>
+      <text x="811" y="226" text-anchor="middle" fill="#7895ab" font-size="9">THE FORGOTTEN ARTIST</text>
+      <text x="733" y="243" fill="#5c758b" font-size="9">Музыка ведёт нас только вперёд</text>
+      <text x="733" y="243" fill="#52f2e3" font-size="9" clip-path="url(#lyrics)">Музыка ведёт нас только вперёд</text>
+      <text x="730" y="271" fill="#7e98ac" font-size="8">01:42</text><text x="892" y="271" text-anchor="end" fill="#7e98ac" font-size="8">03:28</text>
+      <rect x="730" y="278" width="162" height="5" rx="2.5" fill="#26384c"/>
+      <rect x="730" y="278" width="42" height="5" rx="2.5" fill="url(#accent)"><animate attributeName="width" values="18;162;18" dur="8s" repeatCount="indefinite"/></rect>
+      <circle cy="280.5" r="4" fill="#dffeff" filter="url(#glow)"><animate attributeName="cx" values="748;892;748" dur="8s" repeatCount="indefinite"/></circle>
+      <rect x="730" y="297" width="162" height="24" rx="6" fill="#101f30"/><text x="742" y="312" fill="#87a0b4" font-size="8" font-weight="700">PLAYING</text><text x="879" y="312" text-anchor="end" fill="#e1f8fb" font-size="8" font-weight="700">VOL 65%</text>
+      <rect x="730" y="331" width="162" height="3" rx="1.5" fill="#26384c"/><rect x="730" y="331" width="105" height="3" rx="1.5" fill="#20d9ff"/>
+    </g>
+  </g>
+
+  <!-- Animated USB data link -->
+  <path d="M930 304C964 304 970 280 1001 280" fill="none" stroke="#07111d" stroke-width="13" stroke-linecap="round"/>
+  <path d="M930 304C964 304 970 280 1001 280" fill="none" stroke="#35deea" stroke-opacity=".6" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 8"><animate attributeName="stroke-dashoffset" values="32;0" dur="1s" repeatCount="indefinite"/></path>
+  <circle cx="948" cy="298" r="4" fill="#dffeff" filter="url(#glow)"><animate attributeName="cx" values="937;984" dur="1.35s" repeatCount="indefinite"/><animate attributeName="cy" values="303;283" dur="1.35s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="1.35s" repeatCount="indefinite"/></circle>
+
+  <!-- Raspberry Pi Pico style RP2040 board -->
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <rect x="998" y="75" width="153" height="282" rx="26" fill="#07121e" opacity=".52" filter="url(#glow)"/>
+    <rect x="1001" y="72" width="148" height="280" rx="24" fill="url(#board)" stroke="#61c7e5" stroke-opacity=".66" stroke-width="2"/>
+    <rect x="1041" y="59" width="68" height="31" rx="8" fill="#aebbc4"/><rect x="1050" y="62" width="50" height="21" rx="4" fill="#263341"/><rect x="1058" y="65" width="34" height="15" rx="3" fill="#0a111a"/>
+    <path d="M1011 100v224M1139 100v224" stroke="#d7bd67" stroke-width="8" stroke-linecap="round" stroke-dasharray="1 17"/>
+    <path d="M1025 117H1044M1025 137H1057M1124 117H1106M1124 137H1094M1025 298H1051M1124 298H1098" stroke="#71c8da" stroke-opacity=".46" stroke-width="2"/>
+    <rect x="1037" y="144" width="77" height="77" rx="8" fill="#152434" stroke="#8ba5b9" stroke-opacity=".48"/><rect x="1048" y="155" width="55" height="55" rx="5" fill="#1d2b39"/>
+    <path d="M1053 160H1098V205H1053Z" fill="none" stroke="#516b7e" stroke-dasharray="3 3"/>
+    <text x="1075" y="180" text-anchor="middle" fill="#b6c8d5" font-size="8" font-weight="800">RP2040</text><text x="1075" y="193" text-anchor="middle" fill="#71899b" font-size="6">DUAL CORE</text>
+    <circle cx="1112" cy="113" r="5" fill="#32f5d2" filter="url(#glow)"><animate attributeName="opacity" values=".2;1;.2" dur="1s" repeatCount="indefinite"/></circle>
+    <rect x="1041" y="238" width="68" height="38" rx="5" fill="#0c3042" stroke="#48afc9" stroke-opacity=".45"/><path d="M1051 248H1099M1051 256H1088M1051 264H1095" stroke="#6bd2e2" stroke-opacity=".42" stroke-width="2"/>
+    <text x="1075" y="306" text-anchor="middle" fill="#d9f8ff" font-size="10" font-weight="800">RASPBERRY PI</text><text x="1075" y="320" text-anchor="middle" fill="#83c8d8" font-size="9" font-weight="700" letter-spacing="2">PICO</text><text x="1075" y="339" text-anchor="middle" fill="#57a5b9" font-size="7">USB • SPI • RGB565</text>
+  </g>
+  <rect x="1" y="1" width="1198" height="418" rx="27" fill="none" stroke="#8aeaff" stroke-opacity=".15" stroke-width="2"/>
+</svg>
